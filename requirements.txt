@@ -8,6 +8,5 @@ tqdm==4.66.1
 pydantic==2.5.0
 python-dotenv==1.0.0
 arxiv==2.1.0
-habanero==1.2.3
-selenium==4.15.2
-chrome-driver==1.0.0
+habanero==1.1.7
+webdriver-manager==4.0.1
