@@ -1,0 +1,43 @@
+{
+  "storage": {
+    "base_path": "./papers",
+    "organize_by": "year",
+    "max_local_papers": 10000,
+    "auto_cleanup": false
+  },
+  "sources": {
+    "arxiv": {
+      "enabled": true,
+      "timeout": 10,
+      "category": "physics.geo-ph",
+      "max_results": 1000
+    },
+    "wos": {
+      "enabled": true,
+      "timeout": 15,
+      "search_fields": ["geodesy", "navigation", "positioning", "GNSS"],
+      "requires_login": true
+    },
+    "cnki": {
+      "enabled": true,
+      "timeout": 10,
+      "database": "CJFQ",
+      "requires_login": false
+    }
+  },
+  "download": {
+    "max_workers": 5,
+    "retry_times": 3,
+    "timeout": 30,
+    "chunk_size": 8192
+  },
+  "search": {
+    "default_limit": 50,
+    "max_limit": 1000,
+    "fields": [
+      "title",
+      "abstract",
+      "keywords"
+    ]
+  }
+}
